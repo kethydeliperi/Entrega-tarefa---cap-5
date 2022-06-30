@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Bills">
+      <meta name="author" content="Kethyllen Deliperi">
+      <title>Bills</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./style.css">
+  </head>
+    
+
+<body>
+
+  <div class="simbolo-bills">
+    <img src="imagens/simbolo_bills.jpg" class="img-top" alt="Logo Bills">
+    <div class="card-body">
+</div>
+</div>
+
+<div>
+  <h1 class="cumprimento"> Olá! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+  </svg></h1>
+  <h2 class="categorias"> Categorias </h2>
+</div>
+
+    <div class="menu1">
+    <button type="button" class="viagens" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Viagens <img src="imagens/viagens.jpg" class="viagens-img" alt="Viagens"> </button>
+    <button type="button" class="alimentação" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Alimentação <img src="imagens/Alimentação.jpg" class="alimentação-img" alt="Alimentação"> </button>
+    <button type="button" class="lazer" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Lazer <img src="imagens/Lazer.jpg" class="lazer-img" alt="Lazer"> </button>
+    </div>
+
+    <div class="menu2">
+    <button type="button" class="transporte" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Transporte <img src="imagens/Transporte.jpg" class="transporte-img" alt="Transporte"> </button>
+    <button type="button" class="contas" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Contas <img src="imagens/Contas.jpg" class="contas-img" alt="Contas"></button>
+    <button type="button" class="educação" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Educação <img src="imagens/Educação.jpg" class="educação-img" alt="Educação"></button>
+    </div>
+
+    <div class="menu3">
+      <button type="button" class="saúde" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Saúde <img src="imagens/saúde.jpg" class="saúde-img" alt="Saúde"></button>
+      <button type="button" class="emprego" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Emprego <img src="imagens/Emprego.jpg" class="emprego-img" alt="Emprego"></button>
+      <button type="button" class="outros" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Outros <img src="imagens/Outros.jpg" class="outros-img" alt="Outros"></button>
+    </div>
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Inserir gastos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="valor-gasto">
+              <label for="recipient-name" class="col-form-label">Digite o valor:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="Data-gasto">
+              <label for="recipient-name" class="col-form-label">Data:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Observações:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Registrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sair">
+    <a href="./index.html">
+    <button type="button" class="botão-sair">Encerrar sessão.</button>
+  </a>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
